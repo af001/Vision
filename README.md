@@ -9,7 +9,8 @@ The Jupyter Notebooks are written in Python and can be opened in Google Colab or
 
 ### Requirements
 * Android Studio
-* Python3 (Google Colab (cloud) --or-- Anaconda (local))
+* Python3 (Google Colab)
+* Android phone (API 21 or greater)
 
 ### Quick Start
 
