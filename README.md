@@ -58,16 +58,20 @@ This will download a file called *kaggle.json* to you computer. Once complete, i
 #### Analyze Results
 The notebooks provide metrics that can be used to determine the accuracy, precision, and recall of you trained model. Ideally, the model accuracy will be above 70% with a loss below 1.5. An example of a model that generalized will will look similar to the following images. This model does not show signs of over/underfitting and is capable of classifying dog breeds with a relatively high degree of accuracy. The notebook also provides a list of classes that are commonly misclassified.
 
-Training accuracy and loss
+Training loss and accuracy
+
 ![Training accuracy and loss](https://i.ibb.co/0jKhdf4/training.png)
 
-Accuracy, Precision, Recall
+Accuracy, precision, recall
+
 ![Precision Recall](https://i.ibb.co/h2QQvw4/Screen-Shot-2020-05-27-at-11-58-32-AM.png)
 
 Common misclassifications
+
 ![Misclassifications](https://i.ibb.co/fC2Dfd9/Screen-Shot-2020-05-27-at-11-58-51-AM.png)
 
 Predictions
+
 ![Predictions](https://i.ibb.co/p0FG2PT/Screen-Shot-2020-05-27-at-11-59-04-AM.png)
 
 #### Models
