@@ -53,7 +53,7 @@ The next step is to obtain a Kaggle API key. This can be achieved on the Kaggle 
 
 ![API Key Generation](https://i.ibb.co/1zd4qVK/Screen-Shot-2020-05-27-at-11-43-45-AM.png)
 
-This will download a file called *kaggle.json* to you computer. Once complete, it is time to start trainig the custom model. To begin, click *Runtime -> Runa all.* As the Python libraries are imported, users will be asked to link their Colab account to their Google account. Click the link for the authorization code and paste the code into Google Colab. The next part will ask to upload you Kaggle API token. Click the upload button and select the kaggle.json file that was previously downloaded to your computer. 
+This will download a file called *kaggle.json* to you computer. Prior to starting to train the model, it is recommended to change the URLS for each test image at the bottom of the notebook. These URLs should point to images that your model can classifiy, and can be identified by searching for *download_and_predict.* Once complete, it is time to start trainig the custom model. To begin, click *Runtime -> Runa all.* As the Python libraries are imported, users will be asked to link their Colab account to their Google account. Click the link for the authorization code and paste the code into Google Colab. The next part will ask to upload you Kaggle API token. Click the upload button and select the kaggle.json file that was previously downloaded to your computer. 
 
 #### Analyze Results
 The notebooks provide metrics that can be used to determine the accuracy, precision, and recall of you trained model. Ideally, the model accuracy will be above 70% with a loss below 1.5. An example of a model that generalized will will look similar to the following images. This model does not show signs of over/underfitting and is capable of classifying dog breeds with a relatively high degree of accuracy. The notebook also provides a list of classes that are commonly misclassified.
@@ -70,7 +70,7 @@ Common misclassifications
 
 ![Misclassifications](https://i.ibb.co/fC2Dfd9/Screen-Shot-2020-05-27-at-11-58-51-AM.png)
 
-Predictions
+Predictions - Note: These URLs should point to the user's test images and should not be images contained in the dataset. 
 
 ![Predictions](https://i.ibb.co/p0FG2PT/Screen-Shot-2020-05-27-at-11-59-04-AM.png)
 
