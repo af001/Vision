@@ -1,5 +1,7 @@
 # Vision: Android computer vision implementation using custom models. 
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
+![Android Badge](https://img.shields.io/badge/Android%20API-29-blue)
+![Passing](https://img.shields.io/badge/build-passing-green)
 
 This project consists of a template Android application and a set of Colab notebooks that can be used to build a custom Android computer vision appliation. Minor modifications to the Android application need to be made in Java to include the custom trained model, which can be generated using the provided set of Jupyter Notebooks. 
 
