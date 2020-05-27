@@ -8,9 +8,10 @@ This project consists of a template Android application and a set of Colab noteb
 The Jupyter Notebooks are written in Python and can be opened in Google Colab or Anaconda. The notebooks are written to download datasets from Kaggle using the Kaggle API. This allows the user to have access to thousands of datasets with minimal changes to the original code. Due to the time it takes to train a custom model, the notebooks are configured to automatically save the models in Google Drive once training is complete. 
 
 ### Requirements
-* Android Studio
-* Python3 (Google Colab)
-* Android phone (API 21 or greater)
+* Android Studio &nbsp; &nbsp; -> Android IDE
+* Google Colab &nbsp; &nbsp; &nbsp; -> Cloud IDE - Python3
+* Google Drive &nbsp; &nbsp; &nbsp; -> Model Storage
+* Android phone &nbsp; &nbsp; -> Test device (API 21 or greater)
 
 ### Quick Start
 
