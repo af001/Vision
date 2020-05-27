@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.msds.vision.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomView"
+            android:visibility="visible"
+            android:padding="8dp" />
+
+        <com.isseiaoki.simplecropview.CropImageView
+            android:layout_above="@+id/bottomView"
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spacing_small"
+            custom:scv_background_color="@color/windowBackground"
+            custom:scv_crop_mode="fit_image"
+            custom:scv_frame_color="@color/tfe_color_accent"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_color="@color/tfe_color_accent"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_guide_stroke_weight="1dp"
+            custom:scv_handle_color="@color/tfe_color_accent"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_handle_size="14dp"
+            custom:scv_min_frame_size="50dp"
+            custom:scv_overlay_color="@color/overlay"
+            android:visibility="invisible"
+            custom:scv_touch_padding="8dp" />
+
+        <View
+            android:id="@+id/bottomView"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/still_bottom_sheet_layout"
+        layout="@layout/tfe_still_layout_bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
