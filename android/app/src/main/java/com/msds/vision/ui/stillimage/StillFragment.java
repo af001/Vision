@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresPermission;
 import androidx.annotation.UiThread;
 import androidx.fragment.app.Fragment;
 
@@ -294,6 +295,7 @@ public class StillFragment extends Fragment {
             buttonDone.setVisibility(View.VISIBLE);
 
             imageHolder.setVisibility(View.INVISIBLE);
+            //mCropView.setImageURI(mSourceUri);
             mCropView.setVisibility(View.VISIBLE);
 
             buttonPredict.setVisibility(View.INVISIBLE);
@@ -323,7 +325,7 @@ public class StillFragment extends Fragment {
 
 
         cameraBtn.setOnClickListener(v -> {
-            dispatchTakePictureIntent();
+            StillFragmentPermissionsDispatcher.dispatchTakePictureIntentWithPermissionCheck(StillFragment.this);
         });
 
         deleteBtn.setOnClickListener(v -> {
@@ -342,6 +344,8 @@ public class StillFragment extends Fragment {
             sheetBehavior.setPeekHeight(245);
             sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
             mCropView.setVisibility(View.INVISIBLE);
+            scrollView.setVisibility(View.GONE);
+            viewDivider.setVisibility(Vie                                       w.GONE);
             imageHolder.setImageURI(mSourceUri);
             imageHolder.setVisibility(View.VISIBLE);
         });
@@ -639,7 +643,7 @@ public class StillFragment extends Fragment {
                     .useThumbnail(true)
                     .execute(mLoadCallback);
 
-            mCropView.setVisibility(View.GONE);
+            mCropView.setVisibility(View.INVISIBLE);
             imageHolder.setVisibility(View.VISIBLE);
             imageHolder.setImageURI(mSourceUri);
         }
