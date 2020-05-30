@@ -345,7 +345,7 @@ public class StillFragment extends Fragment {
             sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
             mCropView.setVisibility(View.INVISIBLE);
             scrollView.setVisibility(View.GONE);
-            viewDivider.setVisibility(Vie                                       w.GONE);
+            viewDivider.setVisibility(View.GONE);
             imageHolder.setImageURI(mSourceUri);
             imageHolder.setVisibility(View.VISIBLE);
         });
@@ -361,6 +361,7 @@ public class StillFragment extends Fragment {
                 e.printStackTrace();
             }
             final List<Classifier.Recognition> results = classifier.recognizeImage(rgbFrameBitmap, sensorOrientation);
+            System.out.println(results);
             showResultsInBottomSheet(results);
             classifier.close();
 

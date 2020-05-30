@@ -221,6 +221,8 @@ public abstract class CameraActivity extends Fragment
       return;
     }
 
+
+
     try {
       // Initialize the storage bitmaps once when the resolution is known.
       if (rgbBytes == null) {
