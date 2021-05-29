@@ -87,3 +87,7 @@ After the new models have been trained, both .tflite files from models.zip will 
 
 Open Android Studio and import the project from this repo. 
 
+Demo:
+- title: Demo Android Application
+  description: This example uses custom trained models for classifying dogs and birds
+  video: https://youtu.be/fgVVSHR4Eko
