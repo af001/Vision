@@ -88,4 +88,5 @@ After the new models have been trained, both .tflite files from models.zip will 
 Open Android Studio and import the project from this repo. 
 
 #### Demo
+
 [![Demo Application](https://img.youtube.com/vi/fgVVSHR4Eko/0.jpg)](https://www.youtube.com/watch?v=fgVVSHR4Eko)
